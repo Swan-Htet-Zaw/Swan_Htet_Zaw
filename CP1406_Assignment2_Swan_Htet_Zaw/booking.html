@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Book Appointment – 100SMILES Dental Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header & Navigation -->
+    <header class="header">
+      <div class="logo">100<span>SMILES</span> Dental Care</div>
+      <p class="tagline">Caring, modern dental practice for every smile in Razole, Queensland.</p>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="our_team.html">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html" class="active">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Book Your Appointment</h1>
+        <p>
+          Fill out the form below to request your preferred appointment. Need urgent care? <a href="contact.html">Call us</a> for fastest assistance.
+        </p>
+
+        <!-- Booking Form -->
+        <form class="booking-form" action="#" method="post" autocomplete="on">
+          <label for="fullName">Full Name *</label>
+          <input type="text" id="fullName" name="fullName" required>
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <div style="display: flex; gap:1rem;">
+            <div style="flex:1">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div style="flex:1">
+              <label for="time">Preferred Time</label>
+              <select id="time" name="time">
+                <option value="">-- Select --</option>
+                <option>Morning (9am–12pm)</option>
+                <option>Afternoon (12pm–4pm)</option>
+                <option>Evening (4pm–6pm)</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="service">Service</label>
+          <select id="service" name="service">
+            <option value="">-- Choose a service --</option>
+            <option value="checkup">Routine Checkup</option>
+            <option value="cleaning">Cleaning &amp; Hygiene</option>
+            <option value="filling">Filling or Repair</option>
+            <option value="crown">Crown/Bridge</option>
+            <option value="kids">Children's Dentistry</option>
+            <option value="emergency">Emergency Care</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="notes">Anything else we should know?</label>
+          <textarea name="notes" id="notes" rows="4" placeholder="Symptoms, allergies, requests..."></textarea>
+
+          <button type="submit" class="btn btn-primary" style="margin-top:1.2em">Request Booking</button>
+        </form>
+      </section>
+
+      <div class="highlight-box">
+        <h3>We aim to reply to booking requests within one business day.</h3>
+        <p>If your need is urgent, <a href="contact.html" class="btn btn-outline">call us now</a>.</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p><strong>100SMILES Dental Care</strong> – 33 Fantail Street, Razole, Queensland</p>
+      <p>Call: 07 5000 5599 &nbsp;|&nbsp; Email: admin@100smilesdentalcare.com.au</p>
+    </footer>
+  </div>
+  <script src="main.js" defer></script>
+</body>
+</html>
